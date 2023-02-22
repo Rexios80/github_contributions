@@ -1,4 +1,4 @@
-name: git_contributions
+name: github_contributions
 
 environment:
   sdk: ">=2.19.0 <3.0.0"

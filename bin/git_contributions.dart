@@ -15,6 +15,7 @@ void main(List<String> arguments) async {
     'author:${Private.author}',
     'is:public',
     'is:pr',
+    ...Private.repoExclude.map((e) => '-repo:$e'),
     ...Private.orgExclude.map((e) => '-user:$e'),
   ];
 
