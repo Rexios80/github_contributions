@@ -1,11 +1,10 @@
 name: git_contributions
-description: A sample command-line application.
-version: 1.0.0
 
 environment:
-  sdk: '>=2.19.2 <3.0.0'
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  github: ^9.9.0
 
 dev_dependencies:
-
   rexios_lints: ^5.0.0
-  test: ^1.21.0
