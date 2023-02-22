@@ -11,6 +11,6 @@ I wanted an easy way to see all my Open Source contributions while filtering out
 
 ## Setup
 1. Clone this repository
-2. Create `bin/private.dart` and add the fields required to make `bin/git_contributions.dart` happy
-3. Run `dart run bin/git_contributions.dart`
+2. Create `bin/private.dart` and add the fields required to make `bin/github_contributions.dart` happy
+3. Run `dart run bin/github_contributions.dart`
 4. Enjoy!
