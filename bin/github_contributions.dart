@@ -5,7 +5,8 @@ import 'private.dart';
 
 final github = GitHub(auth: Authentication.withToken(Private.token));
 
-final after = DateTime(2022);
+// Past 6 months
+final after = DateTime.now().subtract(const Duration(days: 180));
 final before = DateTime.now();
 
 void main(List<String> arguments) async {
