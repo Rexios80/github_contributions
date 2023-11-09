@@ -23,7 +23,6 @@ void main(List<String> arguments) async {
   final groupedPrs = <String, List<Issue>>{};
   await for (final pr in github.search.issues(tags.join(' '), pages: 9999)) {
     if (pr.createdAt!.isBefore(after) || pr.createdAt!.isAfter(before)) {
-      print('Skipping: ${pr.createdAt}: ${pr.title}');
       continue;
     }
     groupedPrs.update(
