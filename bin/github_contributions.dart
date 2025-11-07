@@ -17,6 +17,7 @@ final tags = [
   'author:${Private.author}',
   'is:public',
   'is:pr',
+  'is:merged',
   'created:$after..$before',
   ...Private.repoExclude.map((e) => '-repo:$e'),
   ...Private.orgExclude.map((e) => '-user:$e'),
